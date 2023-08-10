@@ -6,8 +6,8 @@ import 'controllers/menu_controller.dart';
 import 'layout.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
   Get.put(AppMenuController);
+  WidgetsFlutterBinding.ensureInitialized();
 
   runApp(const Templ());
 }

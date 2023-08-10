@@ -9,7 +9,7 @@ class AppRoutes {
   static const ClientsPageRoute = "Clients";
   static const AuthenticationPageRoute = "Authentication";
 
-  List sideMenuItems = [
+  static List sideMenuItems = [
     OverViewPageRoute,
     DriversPageRoute,
     ClientsPageRoute,

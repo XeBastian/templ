@@ -12,21 +12,20 @@ class VerticalMenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var width = MediaQuery.of(context).size.width;
     return InkWell(
       onTap: onTap,
       onHover: (hoverValue) {
-        hoverValue ? AppControllers.menuController.onHover(itemName) : AppControllers.menuController.onHover("cannot hover");
+        hoverValue ? menuController.onHover(itemName) : menuController.onHover("cannot hover");
       },
       child: Obx(
         () => Container(
           decoration: BoxDecoration(
-            color: AppControllers.menuController.isHovering(itemName) ? AppColors.lightGrey : AppColors.transparent,
+            color: menuController.isHovering(itemName) ? AppColors.lightGrey : AppColors.transparent,
           ),
           child: Row(
             children: [
               Visibility(
-                visible: AppControllers.menuController.isHovering(itemName) || AppControllers.menuController.isActive(itemName),
+                visible: menuController.isHovering(itemName) || menuController.isActive(itemName),
                 maintainSize: true,
                 maintainState: true,
                 maintainAnimation: true,
@@ -42,13 +41,13 @@ class VerticalMenuItem extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(16),
-                    child: AppControllers.menuController.returnIconFor(itemName),
+                    child: menuController.returnIconFor(itemName),
                   ),
-                  if (AppControllers.menuController.isActive(itemName))
+                  if (menuController.isActive(itemName))
                     Flexible(
                       child: CustomText(
                         text: itemName,
-                        color: AppControllers.menuController.isHovering(itemName) ? AppColors.dark : AppColors.lightGrey,
+                        color: menuController.isHovering(itemName) ? AppColors.dark : AppColors.lightGrey,
                       ),
                     )
                   else

@@ -31,7 +31,7 @@ class Templ extends StatelessWidget {
         ),
         primaryColor: Colors.blue,
       ),
-      home: const SiteLayout(),
+      home: SiteLayout(),
     );
   }
 }

@@ -6,4 +6,5 @@ class AppColors {
   static Color dark = const Color(0xFF363740);
   static Color active = const Color(0xFF3C19C0);
   static Color transparent = Colors.transparent;
+  static Color white = Colors.white;
 }

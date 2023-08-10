@@ -16,7 +16,7 @@ class SideMenu extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.light,
+        color: AppColors.white,
       ),
       child: ListView(
         children: [

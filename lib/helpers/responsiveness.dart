@@ -19,7 +19,7 @@ class ResponsiveWidget extends StatelessWidget {
 // create static methods to determine the current view if small, medium or large.
 
 //This is a small screen since its is less than the medium dimension breakpoint
-  static bool isSmallScreen(BuildContext context) => MediaQuery.of(context).size.width < smallScreenSize;
+  static bool isSmallScreen(BuildContext context) => MediaQuery.of(context).size.width < mediumScreenSize;
 
   // medium is less than large and greater than small
 

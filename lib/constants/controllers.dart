@@ -2,7 +2,4 @@
 
 import '../controllers/menu_controller.dart';
 
-class AppControllers {
-  // the menu controller
-  static AppMenuController menuController = AppMenuController.instance;
-}
+AppMenuController menuController = AppMenuController.instance;

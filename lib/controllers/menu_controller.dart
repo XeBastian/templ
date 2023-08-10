@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:templ/constants/style.dart';
 import 'package:templ/routing/routes.dart';
 
-class MenuController extends GetxController {
-  static MenuController instance = Get.find();
+class AppMenuController extends GetxController {
+  static AppMenuController instance = Get.find();
   var activeItem = AppRoutes.OverViewPageRoute.obs;
   var hoverItem = "".obs;
 
